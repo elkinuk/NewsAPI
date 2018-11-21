@@ -23,6 +23,9 @@
   <li><a href="https://gulpjs.com">Gulp</a> - a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.</li>
   <li><a href="https://scrimba.com/g/gintrotoes6">ES6+</a> - JavaScript has grown a lot in the past few years and lot of new features had been added to JavaScript to make it much more powerful and productive programming language</li>
   <li><a href="https://babeljs.io">Babel</a> - a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. </li>
+  <li><a href="https://nodejs.org/en/">Node</a> - designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection the callback is fired, but if there is no work to be done, Node will sleep.</li>
+  <li><a href="https://docs.npmjs.com/about-npm/index.html">npm</a> - the world’s largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well.</li>
+  <li><a href="https://webpack.js.org">Webpack </a> - a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.</li>
 </ul>
 
 <h2 align="center"> How to build the magic </h2>
