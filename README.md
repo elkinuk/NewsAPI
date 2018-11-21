@@ -20,9 +20,9 @@
 
 <h2 align="center"> God bless to: </h2>
 <ul>
-  <li><a href="https://gulpjs.com">Gulp</a></li>
-  <li><a href="https://scrimba.com/g/gintrotoes6">ES6+</a></li>
-  <li><a href="https://babeljs.io">Babel</a></li>
+  <li><a href="https://gulpjs.com">Gulp</a> - a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.</li>
+  <li><a href="https://scrimba.com/g/gintrotoes6">ES6+</a> - JavaScript has grown a lot in the past few years and lot of new features had been added to JavaScript to make it much more powerful and productive programming language</li>
+  <li><a href="https://babeljs.io">Babel</a> - a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. </li>
 </ul>
 
 <h2 align="center"> How to build the magic </h2>
