@@ -1,0 +1,23 @@
+{
+  "name": "newsapitask",
+  "version": "1.0.0",
+  "description": "newsAPI task",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-image": "^4.3.0",
+    "gulp-useref": "^3.1.6",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elkin",
+  "license": "ISC"
+}
