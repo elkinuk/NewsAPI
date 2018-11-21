@@ -8,7 +8,7 @@
   <br>
 </h1>
 
-<h4 align="center">Just a small project based on <a href="https://newsapi.org/" target="_blank">NewsAPI</a</h4>
+<h4 align="center">Just a small project based on <a href="https://newsapi.org/" target="_blank">NewsAPI</a>. For development was used <a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC pattern</a></h4>
 
 <br>
 <br>
@@ -17,6 +17,13 @@
     <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
     <img src="https://forthebadge.com/images/badges/powered-by-electricity.svg">
 </p>
+
+<h2 align="center"> God bless to: </h2>
+<ul>
+  <li><a href="https://gulpjs.com">Gulp</a></li>
+  <li><a href="https://scrimba.com/g/gintrotoes6">ES6+</a></li>
+  <li><a href="https://babeljs.io">Babel</a></li>
+</ul>
 
 <h2 align="center"> How to build the magic </h2>
 
