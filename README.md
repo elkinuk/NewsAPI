@@ -34,10 +34,23 @@
 $ npm install
 ```
 
-<h3 align="center"> Prod build</h3>
+<p>Prod build</p>
 
 ```sh
 $ npm run build:prod
+```
+
+<p>Dev build</p>
+
+```sh
+$ npm run build:dev
+```
+
+<p>Start Dev-Server</p>
+
+```sh
+$ npm run build:dev
+$ open http://localhost:9000
 ```
 
 <h2 align="center">
