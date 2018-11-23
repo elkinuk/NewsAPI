@@ -34,7 +34,7 @@
 $ npm install
 ```
 
-<h2 align="center"> Prod build</h2>
+<h3 align="center"> Prod build</h3>
 
 ```sh
 $ npm run build:prod
