@@ -32,7 +32,12 @@
 
 ```sh
 $ npm install
-$ gulp
+```
+
+<h2 align="center"> Prod build</h2>
+
+```sh
+$ npm run build:prod
 ```
 
 <h2 align="center">
