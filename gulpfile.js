@@ -18,8 +18,8 @@ gulp.task('image', () =>
 
 gulp.task('scripts', () =>
   gulp.src(['node_modules/babel-polyfill/dist/polyfill.js','src/js/*.js'])
-  .pipe(babel({presets: ['@babel/env']}))
-  .pipe(gulp.dest('src/js/compiled'))
+    .pipe(babel({presets: ['@babel/env']}))
+    .pipe(gulp.dest('src/js/compiled'))
 );
 
 gulp.task('default', callback => runSequence('scripts', ['image', 'html'], callback))

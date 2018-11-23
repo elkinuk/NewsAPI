@@ -1,4 +1,7 @@
-class App {
+import AppController from './AppController.js';
+import AppView from './AppView.js';
+
+export default class App {
   constructor() {
     this.controller = new AppController();
     this.view = new AppView();

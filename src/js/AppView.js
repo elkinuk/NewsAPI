@@ -1,4 +1,7 @@
-class AppView {
+import Sources from './Sources.js';
+import News from './News.js';
+
+export default class AppView {
   constructor() {
     this.news = new News();
     this.sources = new Sources();

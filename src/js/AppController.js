@@ -1,32 +1,34 @@
-class AppController extends NewsAPILoader {
-	constructor(){
-		super();
-		this.currentSource;
-	}
+import NewsAPILoader from './NewsAPILoader.js';
 
-	getSources(callback) {
-	  super.getResp({ endpoint: 'sources' }, callback);
-	}
+export default class AppController extends NewsAPILoader {
+  constructor(){
+    super();
+    this.currentSource;
+  }
 
-	getNews(e, callback) {
-	  let target = e.target;
-		const sourcesContainer = e.currentTarget;
+  getSources(callback) {
+    super.getResp({ endpoint: 'sources' }, callback);
+  }
 
-		if(document.querySelector('.news__spiner')) document.querySelector('.news__spiner').classList.remove('hidden');
+  getNews(e, callback) {
+    let target = e.target;
+    const sourcesContainer = e.currentTarget;
 
-	  while (target != sourcesContainer) {
-			if (target.classList.contains('source__item')) {
-				const sources = target.getAttribute('data-source-id');
-				if (this.currentSource !== sources) {
-					this.currentSource =  sources;
-					super.getResp({
-						endpoint: 'everything',
-						options: { sources }
-					}, callback);
-				}
-				return;
-			}
-			target = target.parentNode;
-	  }
-	}
+    if(document.querySelector('.news__spiner')) document.querySelector('.news__spiner').classList.remove('hidden');
+
+    while (target != sourcesContainer) {
+      if (target.classList.contains('source__item')) {
+        const sources = target.getAttribute('data-source-id');
+        if (this.currentSource !== sources) {
+          this.currentSource =  sources;
+          super.getResp({
+            endpoint: 'everything',
+            options: { sources }
+          }, callback);
+        }
+        return;
+      }
+      target = target.parentNode;
+    }
+  }
 }
