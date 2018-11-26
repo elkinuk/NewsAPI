@@ -1,3 +1,5 @@
+import './sources.scss';
+
 export default class Sources {
   constructor() {
     this.state;

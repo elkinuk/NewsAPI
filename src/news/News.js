@@ -1,3 +1,5 @@
+import './news.scss';
+
 export default class News {
   constructor() {
     this.state;

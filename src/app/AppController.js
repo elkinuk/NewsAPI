@@ -1,7 +1,7 @@
-import NewsAPILoader from './NewsAPILoader.js';
+import NewsAPILoader from 'common/NewsAPILoader.js';
 
 export default class AppController extends NewsAPILoader {
-  constructor(){
+  constructor() {
     super();
     this.currentSource;
   }
@@ -14,13 +14,12 @@ export default class AppController extends NewsAPILoader {
     let target = e.target;
     const sourcesContainer = e.currentTarget;
 
-    if(document.querySelector('.news__spiner')) document.querySelector('.news__spiner').classList.remove('hidden');
-
     while (target != sourcesContainer) {
       if (target.classList.contains('source__item')) {
         const sources = target.getAttribute('data-source-id');
+        if (document.querySelector('.news__spinner')) document.querySelector('.news__spinner').classList.remove('hidden');
         if (this.currentSource !== sources) {
-          this.currentSource =  sources;
+          this.currentSource = sources;
           super.getResp({
             endpoint: 'everything',
             options: { sources }

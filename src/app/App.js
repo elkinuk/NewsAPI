@@ -1,6 +1,8 @@
 import AppController from './AppController.js';
 import AppView from './AppView.js';
 
+import 'common/images.js';
+
 export default class App {
   constructor() {
     this.controller = new AppController();
