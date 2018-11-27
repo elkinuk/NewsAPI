@@ -20,17 +20,12 @@
     "eslint-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-image": "^4.3.0",
-    "gulp-useref": "^3.1.6",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^4.5.0",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.10.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "run-sequence": "^2.2.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
@@ -40,8 +35,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server",
-    "build": "cross-env NODE_ENV=production node_modules/.bin/webpack -p"
+    "start:prod": "cross-env NODE_ENV=production node_modules/.bin/webpack-dev-server -p",
+    "start:dev": "cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --watch",
+    "build:prod": "cross-env NODE_ENV=production node_modules/.bin/webpack -p",
+    "build:dev": "cross-env NODE_ENV=development node_modules/.bin/webpack",
+    "code:check": "./node_modules/.bin/eslint '**/*.js'",
+    "code:fix": "./node_modules/.bin/eslint '**/*.js' --fix"
   },
   "author": "elkin",
   "license": "ISC"

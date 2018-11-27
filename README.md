@@ -33,18 +33,42 @@
 ```sh
 $ npm install
 ```
+<p>Dev build</p>
+
+```sh
+$ npm run build:dev
+```
 
 <p>Prod build</p>
 
 ```sh
-$ npm run build
+$ npm run build:prod
 ```
 
-<p>Start Dev-Server</p>
+<p>Start Dev-Server on dev</p>
 
 ```sh
-$ npm start
+$ npm start:dev
 $ open http://localhost:9000
+```
+
+<p>Start Dev-Server on prod</p>
+
+```sh
+$ npm start:prod
+$ open http://localhost:8000
+```
+
+<p>Start ESLint</p>
+
+```sh
+$ npm run code:check
+```
+
+<p>Fix ESLint problems</p>
+
+```sh
+$ npm run code:fix
 ```
 
 <h2 align="center">

@@ -1,7 +1,6 @@
 webpack.config.js
 webpack.config.prod.js
 webpack.config.dev.js
-gulpfile.js
-dist
 node_modules
+build
 dev
