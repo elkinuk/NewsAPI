@@ -6,4 +6,15 @@ export default class NewsAPILoader extends Loader {
       apiKey: '67c1acd35f714c8da11288faf6e12bcf',
     });
   }
+
+  sourcesReq(callback){
+    super.getResp({ endpoint: 'sources' }, callback);
+  }
+
+  newsReq(sources, callback){
+    super.getResp({
+      endpoint: 'everything',
+      options: { sources }
+    }, callback);
+  }
 }

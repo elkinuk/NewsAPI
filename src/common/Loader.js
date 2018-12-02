@@ -1,33 +1,70 @@
+import { customFetch } from './customPolyfils.js';
+
 export default class Loader {
   constructor(baseLink, settings) {
     this.baseLink = baseLink,
     this.settings = settings;
+    this._load = this.setLogger();
   }
 
-  _load(args){
-    (window.fetch) ? this._asyncLoad(args) : this._xmlHttpLoad(args);
+  async _getErrorScript() {
+    const { default: component } = await import(/* webpackChunkName: "ErrorHandler" */ './ErrorHandler.js');
+    return component;
   }
 
-  getResp(props, callback = () => { console.error('No callback for GET response');}) {
-    const method = 'GET';
-    this._load({ method , props, callback });
-  }
-
-  postResp(props, callback = () => { console.error('No callback for POST response');}) {
-    const method = 'POST';
-    this._load({ method , props, callback });
+  _showError(res){
+    this._getErrorScript()
+      .then(ErrorHandler => {
+        this.error = new ErrorHandler();
+        this.error.show(res);
+      });
   }
 
   _errorHandler(res) {
     if (!res.ok) {
-      if (res.status === 401 || res.status === 404)
-        alert(`Sorry, but there is ${res.status} error: ${res.statusText}`);
-      throw Error(res.statusText);
+      if (res.status === 401 || res.status === 404){
+        this._showError(res);
+        throw Error(res.statusText);
+      }
     }
     return res;
   }
 
-  createUrl({endpoint, options}){
+  _loadData(args){
+    (window.fetch) ? this._asyncLoad(args) : this._xmlHttpLoad(args);
+  }
+
+  setLogger(){
+    return new Proxy(this._loadData, {
+      apply: function(target, thisArg, argumentsList) {
+        const data = argumentsList[0];
+        console.log(`${data.requestOptions.method} request:${JSON.stringify(data.props)}`);
+        return target.apply(thisArg, argumentsList);
+      }
+    });
+  }
+
+  getResp(props, callback) {
+    const requestOptions = { method: 'GET' };
+    this._load({ requestOptions , props, callback });
+  }
+
+  postResp(props, callback) {
+    const requestOptions = { method: 'POST' };
+    this._load({ requestOptions , props, callback });
+  }
+
+  delResp(props, body, callback) {
+    const requestOptions = { method: 'DELETE', body: body };
+    this._load({ requestOptions , props, callback });
+  }
+
+  pushResp(props, body, callback) {
+    const requestOptions = { method: 'PUSH', body: body };
+    this._load({ requestOptions , props, callback });
+  }
+
+  _createUrl({endpoint, options}){
     let urlOptions = Object
       .entries({ ...this.settings, ...options})
       .map(el => el.join('='))
@@ -35,46 +72,25 @@ export default class Loader {
     return `${this.baseLink}${endpoint}?${urlOptions}`;
   }
 
-  async _asyncLoad({method, callback, props}) {
+  async _asyncLoad({requestOptions, callback, props}) {
     try{
-      const res = await fetch(this.createUrl(props), { method });
+      const res = await fetch(this._createUrl(props), requestOptions);
       await this._errorHandler(res);
       callback(await res.json());
     } catch(err){ console.error(err); }
   }
 
-  _fetchLoad({method, callback, props}) {
-    fetch(this.createUrl(props), { method })
+  _fetchLoad({requestOptions, callback, props}) {
+    fetch(this._createUrl(props), requestOptions)
       .then(this._errorHandler)
       .then(res => res.json())
       .then(data => callback(data))
       .catch(err => console.error(err));
   }
 
-  _xmlHttpLoad({method, callback, props}){
-    this._customFetch(this.createUrl(props), { method })
+  _xmlHttpLoad({requestOptions, callback, props}){
+    customFetch(this._createUrl(props), requestOptions)
       .then(data => callback(JSON.parse(data)))
       .catch(err => console.error(err));
-  }
-
-  _customFetch(url, obj){
-    return new Promise((resolve, reject) => {
-      let xhr = new XMLHttpRequest();
-      xhr.open(obj.method || 'GET', url);
-      if (obj.headers) {
-        Object.keys(obj.headers).forEach(key => {
-          xhr.setRequestHeader(key, obj.headers[key]);
-        });
-      }
-      xhr.onload = () => {
-        if (xhr.status >= 200 && xhr.status < 300) {
-          resolve(xhr.response);
-        } else {
-          reject(xhr.statusText);
-        }
-      };
-      xhr.onerror = () => reject(xhr.statusText);
-      xhr.send(obj.body);
-    });
   }
 }

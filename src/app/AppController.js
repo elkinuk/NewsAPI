@@ -17,7 +17,6 @@ export default class AppController extends NewsAPILoader {
     while (target != sourcesContainer) {
       if (target.classList.contains('source__item')) {
         const sources = target.getAttribute('data-source-id');
-        if (document.querySelector('.news__spinner')) document.querySelector('.news__spinner').classList.remove('hidden');
         if (this.currentSource !== sources) {
           this.currentSource = sources;
           super.getResp({

@@ -5,13 +5,20 @@ export default class AppView {
     this.sources = new Sources();
   }
 
-  async getNews() {
+  drawNewsSpiner(){
+    const newsSpiner = document.querySelector('#newsSpinerTemp');
+    const newsSpinerClone = (newsSpiner.content) ? newsSpiner.content.cloneNode(true).querySelector('.news__spinner') : newsSpiner.querySelector('.news__spinner').cloneNode(true);
+    document.querySelector('.news').innerHTML = '';
+    document.querySelector('.news').appendChild(newsSpinerClone);
+  }
+
+  async getNewsScript() {
     const { default: component } = await import(/* webpackChunkName: "News" */ '../news/News.js');
     return component;
   }
 
   drawNews(data) {
-    this.getNews().then(News => {
+    this.getNewsScript().then(News => {
       this.news = new News();
       this.news.draw(data.articles);
     });
