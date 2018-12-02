@@ -10,23 +10,14 @@ export default class AppController extends NewsAPILoader {
     super.getResp({ endpoint: 'sources' }, callback);
   }
 
-  getNews(e, callback) {
-    let target = e.target;
-    const sourcesContainer = e.currentTarget;
-
-    while (target != sourcesContainer) {
-      if (target.classList.contains('source__item')) {
-        const sources = target.getAttribute('data-source-id');
-        if (this.currentSource !== sources) {
-          this.currentSource = sources;
-          super.getResp({
-            endpoint: 'everything',
-            options: { sources }
-          }, callback);
-        }
-        return;
-      }
-      target = target.parentNode;
+  getNews(sources, callback) {
+    if (this.currentSource !== sources) {
+      this.currentSource = sources;
+      super.getResp({
+        endpoint: 'everything',
+        options: { sources }
+      }, callback);
     }
+    return;
   }
 }

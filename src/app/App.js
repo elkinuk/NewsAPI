@@ -12,8 +12,16 @@ export default class App {
   start() {
     document.querySelector('.sources')
       .addEventListener('click', e => {
-        this.view.drawNewsSpiner();
-        this.controller.getNews(e, data => this.view.drawNews(data));
+        let target = e.target;
+        const sourcesContainer = e.currentTarget;
+
+        while (target != sourcesContainer) {
+          if (target.classList.contains('source__item')) {
+            this.view.drawNewsSpiner();
+            this.controller.getNews(target.getAttribute('data-source-id'), data => this.view.drawNews(data));
+          }
+          target = target.parentNode;
+        }
       });
     this.controller.getSources(data => this.view.drawSources(data));
   }
