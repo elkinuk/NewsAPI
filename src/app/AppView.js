@@ -1,8 +1,10 @@
 import Sources from 'sources/Sources.js';
+import Carousel from 'common/Carousel.js';
 
 export default class AppView {
   constructor() {
     this.sources = new Sources();
+    this.corousel = new Carousel();
   }
 
   drawNewsSpiner(){
@@ -26,5 +28,6 @@ export default class AppView {
 
   drawSources(data) {
     this.sources.draw(data.sources);
+    this.corousel.init(document.querySelector('.sources'));
   }
 }

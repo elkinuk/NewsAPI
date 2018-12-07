@@ -1,23 +1,15 @@
 import NewsAPILoader from 'common/NewsAPILoader.js';
 
-export default class AppController extends NewsAPILoader {
+export default class AppController{
   constructor() {
-    super();
-    this.currentSource;
+    this.newsAPILoader = new NewsAPILoader();
   }
 
   getSources(callback) {
-    super.getResp({ endpoint: 'sources' }, callback);
+    this.newsAPILoader.sourcesReq(callback);
   }
 
   getNews(sources, callback) {
-    if (this.currentSource !== sources) {
-      this.currentSource = sources;
-      super.getResp({
-        endpoint: 'everything',
-        options: { sources }
-      }, callback);
-    }
-    return;
+    this.newsAPILoader.newsReq(sources, callback);
   }
 }

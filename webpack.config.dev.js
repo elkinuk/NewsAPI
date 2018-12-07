@@ -16,6 +16,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json']
   },
   watch: true,
+  devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dev'),
     compress: true,
