@@ -8,7 +8,7 @@
   <br>
 </h1>
 
-<h4 align="center">A client based on <a href="https://newsapi.org/" target="_blank">NewsAPI</a>. For development was used <a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC pattern</a></h4>
+<h4 align="center">A <a href="https://newsapi.org/" target="_blank">NewsAPI</a> client on Vanila JS & ES6 features. For development was used <a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC pattern</a></h4>
 
 <br>
 <br>
