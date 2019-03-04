@@ -8,7 +8,7 @@
   <br>
 </h1>
 
-<h4 align="center"> A few small project regarding to the <a href="https://newsapi.org/">NEWS API</a></h4>
+<h4 align="center"> A few small projects regarding the <a href="https://newsapi.org/">NEWS API</a></h4>
 
 <br>
 <br>
