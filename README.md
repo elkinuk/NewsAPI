@@ -20,7 +20,7 @@
 
 <h2 align="center">Projects</h2>
   <div align="center">
-    <h3>ES6 features + NewsAPI</h3> <p>A NewsAPI client</p>
+    <h3>ES6 features + NewsAPI</h3> <p>A NewsAPI client on Vanila JS & ES6 features</p>
     <a href="https://elkinny.github.io/NewsAPI/news-app/index.html">Click here to try it</a>
     <br><a href="https://github.com/elkinny/NewsAPI/tree/master/news-app">Click here to check the code</a>
   </div>
