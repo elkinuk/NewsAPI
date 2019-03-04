@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{26:function(t,n,o){"use strict";o.r(n),o.d(n,"default",function(){return s});var r=o(0),u=o.n(r),e=o(1),c=o.n(e),s=function(){function t(){u()(this,t)}return c()(t,[{key:"show",value:function(t){alert("Sorry, but there is ".concat(t.status," error: ").concat(t.statusText))}}]),t}()}}]);

@@ -1,6 +1,0 @@
-webpack.config.js
-webpack.config.prod.js
-webpack.config.dev.js
-node_modules
-build
-dev
