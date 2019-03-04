@@ -1,11 +1,9 @@
 <h1 align="center">
-  <br>
   <a href="https://github.com/elkinny">
     <img src="https://raw.githubusercontent.com/elkinny/Curriculum-Vitae/master/ekins_logo.png" alt="Elkin" width="200">    
   </a>
   <br>
     News app project
-  <br>
 </h1>
 
 <h4 align="center">A <a href="https://newsapi.org/" target="_blank">NewsAPI</a> client on Vanila JS & ES6 features. For development was used <a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC pattern</a></h4>
