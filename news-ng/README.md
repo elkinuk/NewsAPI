@@ -3,6 +3,9 @@
   <a href="https://github.com/elkinny">
     <img src="https://raw.githubusercontent.com/elkinny/Curriculum-Vitae/master/ekins_logo.png" alt="Elkin" width="200">
   </a>
+  <br>
+    NewsAPI Angular project
+  <br>
 </h1>
 
 <h4 align="center"> A NewsAPI client on <a href="https://angular.io/">Angular</a></h4>
