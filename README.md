@@ -13,115 +13,20 @@
 <br>
 <br>
 <p align="center">
-    <img src="https://forthebadge.com/images/badges/built-by-codebabes.svg">
-    <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
-    <img src="https://forthebadge.com/images/badges/powered-by-electricity.svg">
+    <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+    <img src="https://forthebadge.com/images/badges/fuck-it-ship-it.svg">
+    <img src="https://forthebadge.com/images/badges/gluten-free.svg">
 </p>
 
 <h2>Tasks</h2>
 <ol>
-  <li><h3>ES6 features + NewsAPP</h3> - <a href="https://elkinny.github.io/NewsAPI/index.html">Try it</a></li>
   <li>
-    <h3>Express + Mongo</h3>
-    <h4>First of all:</h4>
-    <ol>
-      <li>Install Mongo & Node</li>
-      <li>Create 'NewsAPI' db with news and users collections</li>
-      <li>Have fun in Postman</li>
-    </ol>
-    <h4>- To sign up:</h4>
-    <ol>
-      <li>Open Postman</li>
-      <li>Add in reqest field 'http://localhost:3030/users/signup'</li>
-      <li>Go to 'Body' tab</li>
-      <li>Choose raw and select type from 'text' to 'json'</li>
-      <li>Add in textArea
-          ```
-          {
-            "username": "Your login",
-            "password": "Your password"
-          }
-          ```
-      </li>
-      <li>Send!</li>
-    </ol>
-    <h4>- To get all data:</h4>
-    <ol>
-      <li>Open Postman</li>
-      <li>Add in reqest field 'http://localhost:3030/news'</li>
-      <li>Send!</li>
-    </ol>
-    <h4>- To get data by id:</h4>
-    <ol>
-      <li>Open Postman</li>
-      <li>Add in reqest field 'http://localhost:3030/news/<b>your id</b>'</li>
-      <li>Send!</li>
-    </ol>
-    <h4>- To add data:</h4>
-    <ol>
-      <li>Open Postman</li>
-      <li>Add in reqest field 'http://localhost:3030/news'</li>
-      <li>Go to 'Body' tab</li>
-      <li>Choose raw and select type from 'text' to 'json'</li>
-      <li>Add in textArea
-          ```
-          {
-            "title": "Your title",
-            "author": "Your author",
-            "content": "Your text"
-          }
-          ```
-      </li>
-      <li>Go to 'Authorization' tab</li>
-      <li>Select from Type menu Basic Auth</li>
-      <li>Put your Username and Password</li>
-      <li>Send!</li>
-    </ol>
-    <h4>- To edit data:</h4>
-    <ol>
-      <li>Open Postman</li>
-      <li>Add in reqest field 'http://localhost:3030/news/<b>your id</b>'</li>
-      <li>Go to 'Body' tab</li>
-      <li>Choose raw and select type from 'text' to 'json'</li>
-      <li>Add in textArea (you can add only field that you want to edit)
-          ```
-          {
-            "title": "Your title",
-            "author": "Your author",
-            "content": "Your text"
-          }
-          ```
-      </li>
-      <li>Go to 'Authorization' tab</li>
-      <li>Select from Type menu Basic Auth</li>
-      <li>Put your Username and Password</li>
-      <li>Send!</li>
-    </ol>
-    <h4>- To delete data:</h4>
-    <ol>
-      <li>Open Postman</li>
-      <li>Add in reqest field 'http://localhost:3030/news/<b>your id</b>'</li>
-      <li>Go to 'Authorization' tab</li>
-      <li>Select from Type menu Basic Auth</li>
-      <li>Put your Username and Password</li>
-      <li>Send!</li>
-    </ol>
+    <h3>ES6 features + NewsAPP</h3>
+    <ul>
+      <li><a href="https://elkinny.github.io/NewsAPI/index.html">Click here to try it</a></li>
+      <li><a href="https://github.com/elkinny/NewsAPI/tree/master/news-app">Click here to check the code</a></li>
+    </ul>
   </li>
-  <li><h3>Angular</h3> 
-    <h4>- To start:</h4>
-    <ol>
-      <li>INstall Angular</li>
-      <li>Run 'ng serve' in project folder</li>
-      <li>Check `localhost:4200`</li>
-    </ol>
-  </li>
-  <li><h3>Tests</h3> 
-    <h4>- To test:</h4>
-    <ol>
-      <li>Install mongo</li>
-      <li>Run `"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"`</li>
-      <li>Run `npm test` in project folder</li>
-      <li>Check</li>
-    </ol>
-  </li>
+  <li><h3>Express + Mongo</h3></li>
+  <li><h3>Angular</h3></li>
 </ol>
