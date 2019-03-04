@@ -18,7 +18,7 @@
     <img src="https://forthebadge.com/images/badges/gluten-free.svg">
 </p>
 
-<h2>Projects</h2>
+<h2 align="center">Projects</h2>
   <div align="center">
     <h3>ES6 features + NewsAPI</h3> <p>A NewsAPI client</p>
     <a href="https://elkinny.github.io/NewsAPI/news-app/index.html">Click here to try it</a>
