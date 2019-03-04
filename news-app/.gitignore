@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/build
 /tmp
 /out-tsc
 
@@ -35,6 +36,7 @@ speed-measure-plugin.json
 /coverage
 /libpeerconnection.log
 npm-debug.log
+package-lock.json
 yarn-error.log
 testem.log
 /typings
@@ -42,3 +44,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+

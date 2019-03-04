@@ -1,24 +1,41 @@
 <div class="form">
-  <form class="login-form" id="loginForm" (ngSubmit)="logIn(f)" [formGroup]="loginForm">
-    <label for="username" [ngClass]="{ 'invalid': submitted && f.username.errors }">username</label>
-    <input 
-      [ngClass]="{ 'invalid': submitted && f.username.errors }"
+  <form
+    class="login-form"
+    id="loginForm"
+    (ngSubmit)="logIn()"
+    [formGroup]="loginForm"
+  >
+    <label
+      for="username"
+      [ngClass]="{ invalid: submitted && f.username.errors }"
+      >username</label
+    >
+    <input
+      [ngClass]="{ invalid: submitted && f.username.errors }"
       id="username"
       formControlName="username"
       name="username"
       type="text"
       placeholder="username"
-      class="loginForm__username">
-    <label for="password" [ngClass]="{ 'invalid': submitted && f.password.errors }">password</label>
+      class="loginForm__username"
+    />
+    <label
+      for="password"
+      [ngClass]="{ invalid: submitted && f.password.errors }"
+      >password</label
+    >
     <input
-      [ngClass]="{ 'invalid': submitted && f.password.errors }"
+      [ngClass]="{ invalid: submitted && f.password.errors }"
       id="password"
       formControlName="password"
       name="password"
       type="password"
       placeholder="password"
-      class="loginForm__password">
+      class="loginForm__password"
+    />
     <button class="button" [disabled]="loginForm.invalid">Login</button>
-    <p class="message">Not registered? <a [routerLink]="'#'">Create an account</a></p>
+    <p class="message">
+      Not registered? <a [routerLink]="'#'">Create an account</a>
+    </p>
   </form>
 </div>
