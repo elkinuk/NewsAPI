@@ -1,4 +1,22 @@
-# News-ng
+<h1 align="center">
+  <br>
+  <a href="https://github.com/elkinny">
+    <img src="https://raw.githubusercontent.com/elkinny/Curriculum-Vitae/master/ekins_logo.png" alt="Elkin" width="200">
+  </a>
+  <br>
+    FrontCamp
+  <br>
+</h1>
+
+<h4 align="center"> A NewsAPI client on <a href="https://angular.io/">Angular</a></h4>
+
+<br>
+<br>
+<p align="center">
+    <img src="https://forthebadge.com/images/badges/uses-badges.svg">
+    <img src="https://forthebadge.com/images/badges/made-with-crayons.svg">
+    <img src="https://forthebadge.com/images/badges/built-by-codebabes.svg">
+</p>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
