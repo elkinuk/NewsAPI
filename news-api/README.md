@@ -1,17 +1,13 @@
 <h1 align="center">
-  <br>
   <a href="https://github.com/elkinny">
     <img src="https://raw.githubusercontent.com/elkinny/Curriculum-Vitae/master/ekins_logo.png" alt="Elkin" width="200">
   </a>
   <br>
     NewsAPI project
-  <br>
 </h1>
 
 <h4 align="center">Just a small project based on <a href="https://expressjs.com" target="_blank">Express</a> + <a href="https://mongoosejs.com/" target="_blank">Mongoose (MongoDB)</a>.
 
-<br>
-<br>
 <p align="center">
     <img src="https://forthebadge.com/images/badges/built-by-codebabes.svg">
     <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
