@@ -18,11 +18,11 @@
     <img src="https://forthebadge.com/images/badges/powered-by-electricity.svg">
 </p>
 
-<h2>Tasks</h2>
+<h2>Progects</h2>
 <ol>
-  <li><h3>ES6 features + NewsAPP</h3> - <a href="https://elkinny.github.io/NewsAPI/index.html">Try it</a></li>
+  <li><h3>ES6 features + NewsAPP</h3> - <a href="https://elkinny.github.io/NewsAPI/news-app/index.html">Try it</a></li>
   <li>
-    <h3>Express + Mongo</h3>
+    <h3>Express + Mongo NewsAPI</h3>
     <h4>First of all:</h4>
     <ol>
       <li>Install Mongo & Node</li>
