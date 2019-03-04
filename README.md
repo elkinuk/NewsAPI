@@ -24,20 +24,20 @@
     <a href="https://elkinny.github.io/NewsAPI/news-app/index.html">
       <img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/preview-btn.png" alt="Elkin" width="250">
     </a>
-    <br><br><a href="https://github.com/elkinny/NewsAPI/tree/master/news-app"><img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/code-btn.png" alt="Elkin" width="250"></a>
+    <a href="https://github.com/elkinny/NewsAPI/tree/master/news-app"><img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/code-btn.png" alt="Elkin" width="250"></a>
   </div>
   <br>
   <div align="center">
     <h3>Express + Mongo</h3> <p>Just a small project based on Express + Mongoose (MongoDB)</p>
     <a href="https://github.com/elkinny/NewsAPI/tree/master/news-api"><img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/code-btn.png" alt="Elkin" width="250"></a>
   </div>
-  <br><br>
+  
   <div align="center">
     <h3>Angular + NewsAPI</h3> <p>A NewsAPI client on Angular</p>
     <a href="https://elkinny.github.io/NewsAPI/news-ng/index.html">
       <img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/preview-btn.png" alt="Elkin" width="250">
     </a>
-    <br><br><a href="https://github.com/elkinny/NewsAPI/tree/master/news-ng">
+    <a href="https://github.com/elkinny/NewsAPI/tree/master/news-ng">
       <img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/code-btn.png" alt="Elkin" width="250">
     </a>
   </div>
