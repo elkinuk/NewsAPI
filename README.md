@@ -18,7 +18,7 @@
     <img src="https://forthebadge.com/images/badges/gluten-free.svg">
 </p>
 
-<h2>Tasks</h2>
+<h2>Projects</h2>
 <ol>
   <li>
     <h3>ES6 features + NewsAPP</h3>
