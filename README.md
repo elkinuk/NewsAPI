@@ -14,7 +14,7 @@
   <img src="https://forthebadge.com/images/badges/built-with-love.svg">
   <img src="https://forthebadge.com/images/badges/gluten-free.svg">
 </p>
-
+<br>
 <h2 align="center">Projects</h2>
 <table>
   <tr>
