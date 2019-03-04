@@ -20,24 +20,18 @@
 
 <h2>Projects</h2>
 <ol>
-  <li>
-    <h3>ES6 features + NewsAPI</h3>
-    <ul>
-      <li><a href="https://elkinny.github.io/NewsAPI/news-app/index.html">Click here to try it</a></li>
-      <li><a href="https://github.com/elkinny/NewsAPI/tree/master/news-app">Click here to check the code</a></li>
-    </ul>
+  <li align="center">
+    <h3>ES6 features + NewsAPI</h3> <p>A NewsAPI client</p>
+    <a href="https://elkinny.github.io/NewsAPI/news-app/index.html">Click here to try it</a>
+    <br><a href="https://github.com/elkinny/NewsAPI/tree/master/news-app">Click here to check the code</a>
   </li>
-  <li>
-    <h3>Express + Mongo</h3>
-    <ul>
-      <li><a href="https://github.com/elkinny/NewsAPI/tree/master/news-api">Click here to check the code</a></li>
-    </ul>
+  <li align="center">
+    <h3>Express + Mongo</h3> <p>Just a small project based on Express + Mongoose (MongoDB)</p>
+    <a href="https://github.com/elkinny/NewsAPI/tree/master/news-api">Click here to check the code</a>
   </li>
-  <li>
-    <h3>Angular + NewsAPI</h3>
-    <ul>
-      <li><a href="https://elkinny.github.io/NewsAPI/news-ng/index.html">Click here to try it</a></li>
-      <li><a href="https://github.com/elkinny/NewsAPI/tree/master/news-ng">Click here to check the code</a></li>
-    </ul>
+  <li align="center">
+    <h3>Angular + NewsAPI</h3> <p>A NewsAPI client on Angular</p>
+    <a href="https://elkinny.github.io/NewsAPI/news-ng/index.html">Click here to try it</a>
+    <br><a href="https://github.com/elkinny/NewsAPI/tree/master/news-ng">Click here to check the code</a>
   </li>
 </ol>
