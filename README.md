@@ -10,9 +10,9 @@
 <h4 align="center"> A few small projects regarding the <a href="https://newsapi.org/">NEWS API</a></h4>
 
 <p align="center">
-    <img src="https://forthebadge.com/images/badges/built-with-love.svg">
-    <img src="https://forthebadge.com/images/badges/fuck-it-ship-it.svg">
-    <img src="https://forthebadge.com/images/badges/gluten-free.svg">
+  <img src="https://forthebadge.com/images/badges/fuck-it-ship-it.svg">
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+  <img src="https://forthebadge.com/images/badges/gluten-free.svg">
 </p>
 
 <h2 align="center">Projects</h2>
