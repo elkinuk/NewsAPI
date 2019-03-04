@@ -4,7 +4,7 @@
     <img src="https://raw.githubusercontent.com/elkinny/Curriculum-Vitae/master/ekins_logo.png" alt="Elkin" width="200">    
   </a>
   <br>
-    NewsAPI task
+    NewsAPP project
   <br>
 </h1>
 
@@ -33,6 +33,7 @@
 ```sh
 $ npm install
 ```
+
 <p>Dev build</p>
 
 ```sh
@@ -74,4 +75,3 @@ $ npm run code:fix
 <h2 align="center">
   <a href="https://elkinny.github.io/NewsAPI/index.html">Try it now</a>
 </h2>
-
