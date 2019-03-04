@@ -1,0 +1,25 @@
+{
+  "name": "news-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "cross-env NODE_ENV=development node ./app.js",
+    "start:prod": "cross-env NODE_ENV=production node ./app.js"
+  },
+  "author": "elkin",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "errorhandler": "1.5.0",
+    "express": "4.16.4",
+    "http-errors": "1.7.1",
+    "jade": "1.11.0",
+    "jest": "^24.1.0",
+    "mongoose": "5.4.10",
+    "morgan": "1.9.1",
+    "passport": "0.4.0",
+    "passport-http": "0.3.0"
+  }
+}

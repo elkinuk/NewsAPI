@@ -1,0 +1,13 @@
+<header>
+  <h1>PewNews</h1>
+  <div class="user-data">
+    <span *ngIf="username">{{!username ? '' : 'Hello, ' + username}}</span>
+    <a class="login-button" [routerLink]="'../login'"  *ngIf="!username">
+      <div class="login-button__circle">
+        <span class="icon arrow"></span>
+      </div>
+      <p class="login-button__text">Log in</p>
+    </a>
+  </div>
+</header>
+<div *ngIf="titleBlockValue" class="sub-header">{{titleBlockValue}}</div>

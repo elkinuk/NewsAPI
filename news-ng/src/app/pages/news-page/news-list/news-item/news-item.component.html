@@ -1,0 +1,20 @@
+<div class="news__item">
+  <div class="news__meta">
+    <div class="news__meta-photo" [ngStyle]="newsItemStyles"></div>
+    <ul class="news__meta-details">
+      <li class="news__meta-author">{{articleData.author || ''}}</li>
+      <li class="news__meta-date">{{articleData.publishedAt | date}}</li>
+    </ul>
+  </div>
+  <div  class="news__description">
+    <a (click)="redirectToArticle()">
+      <h2 class="news__description-title">{{articleData.title}}</h2>
+      <h3 class="news__description-source">{{articleData.source.name || ''}}</h3>
+      <p class="news__description-description">{{articleData.description || ''}}</p>
+    </a>
+    <div *ngIf="currentUserIsCreator()">
+      <a [routerLink]="'../edit/' + ( articleData.id)" class="icon-button edit" >Edit</a>
+      <button class="icon-button delete" (click)="deleteMyArticle()">Delete</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+::1 - - [11/Feb/2019:19:22:09 +0000] "GET /news HTTP/1.1" 200 904 "-" "PostmanRuntime/7.6.0"
+::1 - - [11/Feb/2019:19:24:05 +0000] "GET /news HTTP/1.1" 200 904 "-" "PostmanRuntime/7.6.0"
+::1 - - [11/Feb/2019:19:24:06 +0000] "GET /news HTTP/1.1" 200 904 "-" "PostmanRuntime/7.6.0"
+::1 - - [11/Feb/2019:19:24:06 +0000] "GET /news HTTP/1.1" 200 904 "-" "PostmanRuntime/7.6.0"

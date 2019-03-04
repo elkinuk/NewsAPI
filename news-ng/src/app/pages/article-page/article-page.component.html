@@ -1,0 +1,9 @@
+<main>  
+  <article>
+    <img src="{{articleData.urlToImage || basicNewsImg}}" alt="">
+    <span class="article__authour">{{articleData.author || ''}}</span>
+    <span class="article__date">{{articleData.publishedAt}}</span>
+    <p class="article__content">{{articleData.content || articleData.description || ''}}</p>
+    <a class="button article__button" [routerLink]="'../../news'">Back</a>
+  </article>
+</main>
