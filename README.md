@@ -28,6 +28,9 @@
   <br><br>
   <div align="center">
     <h3><a href="https://github.com/elkinny/NewsAPI/tree/master/news-api">Express + Mongo</a></h3> <p>Just a small project based on Express + Mongoose (MongoDB)</p>
+  <a href="https://sitechecker.pro/wp-content/uploads/2017/12/hotjar-404-page-not-found.png">
+      <img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/preview-btn.png" alt="Elkin" width="250">
+    </a>
   </div>
   <br><br>
   <div align="center">
