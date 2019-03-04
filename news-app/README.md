@@ -72,6 +72,3 @@ $ npm run code:check
 $ npm run code:fix
 ```
 
-<h2 align="center">
-  <a href="https://elkinny.github.io/NewsAPI/index.html">Try it now</a>
-</h2>
