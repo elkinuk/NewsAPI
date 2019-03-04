@@ -27,6 +27,8 @@
   <li><a href="https://www.mongodb.com/">MongoDB</a> - a document database with the scalability and flexibility that you want with the querying and indexing that you need </li>
   <li><a href="https://mongoosejs.com/">Mongoose</a> - mongodb object modeling for node.js. Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
   </li>
+  <li><a href="https://jestjs.io">Jest</a> - Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
+  </li>
 </ul>
 
 <h2>How to</h2>
