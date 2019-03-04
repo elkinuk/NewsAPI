@@ -2,8 +2,8 @@
   <a href="https://github.com/elkinny">
     <img src="https://raw.githubusercontent.com/elkinny/Curriculum-Vitae/master/ekins_logo.png" alt="Elkin" width="200">
   </a>
+   <br>
     News API
-  <br>
 </h1>
 
 <h4 align="center"> A few small projects regarding the <a href="https://newsapi.org/">NEWS API</a></h4>
