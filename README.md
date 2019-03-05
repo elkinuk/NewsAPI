@@ -25,7 +25,7 @@
     </a>
     </td>
     <td align="center" width="33%">
-      <h3><a href="https://github.com/elkinny/NewsAPI/tree/master/news-api">Express + Mongo</a></h3> <p>Just a small project based on Express + Mongoose (MongoDB)</p>
+      <h3><a href="https://github.com/elkinny/NewsAPI/tree/master/news-api">Express + Mongo</a></h3> <p>Just a small news srver based on Express + Mongoose (MongoDB)</p>
   <a href="https://elkinny.github.io/404/">
       <img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/preview-btn.png" alt="Elkin" width="200">
     </a>
