@@ -31,7 +31,7 @@
     </a>
     </td>
     <td align="center" width="33%">
-      <h3><a href="https://github.com/elkinny/NewsAPI/tree/master/news-ng">Angular + NewsAPI</a></h3> <p>A NewsAPI client on AngularJS Framework + Routing</p>
+      <h3><a href="https://github.com/elkinny/NewsAPI/tree/master/news-ng">Angular + NewsAPI</a></h3> <p>A NewsAPI client on AngularJS Framework + Routing (Ability to LogIn and some other features)</p>
     <a href="https://elkinny.github.io/NewsAPI/news-ng/index.html">
       <img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/preview-btn.png" alt="Elkin" width="200">
     </a>
