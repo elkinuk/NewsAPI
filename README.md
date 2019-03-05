@@ -19,7 +19,7 @@
 <table>
   <tr>
     <td align="center" width="33%">
-      <h3><a href="https://github.com/elkinny/NewsAPI/tree/master/news-app">ES6 features + NewsAPI</a></h3> <p>A NewsAPI client on Vanila JS & ES6 features (async, fetch polyfil and other)</p>
+      <h3><a href="https://github.com/elkinny/NewsAPI/tree/master/news-app">ES6 features + NewsAPI</a></h3> <p>A NewsAPI client on Vanila JS & ES6 features (async, fetch polyfil, destructuring and other)</p>
       <a href="https://elkinny.github.io/NewsAPI/news-app/index.html">
         <img align="center" src="https://raw.githubusercontent.com/elkinny/NewsAPI/master/preview-btn.png" alt="Elkin" width="200">
     </a>
